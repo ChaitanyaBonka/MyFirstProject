@@ -23,7 +23,7 @@
 		<div class="success_container">
 			<div class="success_icon">
 				<%-- <img src="<c:url value="/resources/images/100.png"/>" class="img-responsive" style="width: 100%" alt="success"> --%>
-				 <img src="/resources/images/successicon2.jpg" alt="success"> 
+				 <!-- <img src="/resources/images/successicon2.jpg" alt="success"> --> 
 			</div>	
 			<div class="success_content">
 				<div class="content_top">

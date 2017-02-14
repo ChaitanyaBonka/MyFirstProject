@@ -60,9 +60,9 @@
 <div class="container">
 <div ng-app="myApp" ng-controller="customersCtrl">
 <input type="text" class="form-control" placeholder="search" ng-model="searchBy.Name"/>
-    <button type="button" class="btn btn-info">
+    <!-- <button type="button" class="btn btn-info">
       <span class="glyphicon glyphicon-search"></span> Search
-    </button>
+    </button> -->
 <table class="table table-hover table-bordered">
   <tr>
        <th>Product Id</th>

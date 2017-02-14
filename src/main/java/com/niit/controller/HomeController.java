@@ -36,10 +36,10 @@ public class HomeController {
 		return new ModelAndView("index");
 	}
 
-	@RequestMapping("/*")
+	/*@RequestMapping("/*")
 	public ModelAndView fun2() {
 		return new ModelAndView("errorPage");
-	}
+	}*/
 
 	@ModelAttribute("Register")
 	public Register fun12() {

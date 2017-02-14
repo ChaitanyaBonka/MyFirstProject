@@ -11,9 +11,6 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
-
-
-
 <head>
 
 <link rel="stylesheet"
@@ -73,11 +70,10 @@
 
 
 			<input type="text" class="form-control" placeholder="Search"
-				ng-model="searchBy.Name" /> <br /> <a href="checkOut"
+				ng-model="searchBy.Name" /> <br /> <a
+				href="<spring:url value="/checkout"/>"
 				class="btn btn-success pull-right"><span
 				class="glyphicon glyphicon-shopping-cart"></span> Check out</a>
-
-
 
 			<table class="table table-hover table-bordered">
 
@@ -97,7 +93,7 @@
 				<tr ng-repeat="x in names | filter:searchBy">
 
 					<td>{{x.Id}}</td>
-					
+
 					<td>{{x.Name}}</td>
 
 					<td>{{x.quantity}}</td>
@@ -109,8 +105,7 @@
 						class="label label-danger"
 						ng-click="removeFromCart(item.product.Id)"> <span
 							class="glyphicon glyphicon-remove"></span>remove
-					</a>
-					</td>
+					</a></td>
 
 				</tr>
 
